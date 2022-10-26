@@ -1,7 +1,8 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { AiOutlineMenu } from "react-icons/ai"
+import menuIcon from "../assets/menu-icon.svg"
+import closeIcon from "../assets/close-icon.svg"
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -21,7 +22,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-[#f43f5e]";
+  const navbarBackground = isTopOfPage ? "" : "bg-[#03CEA4]";
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -54,20 +55,20 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className="rounded-full p-2"
+            className="rounded-full  p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <AiOutlineMenu />
+            <img alt="menu-icon" src={menuIcon} />
           </button>
         )}
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-[#03CEA4] w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <AiOutlineMenu />
+                <img alt="close-icon" src={closeIcon} />
               </button>
             </div>
 
