@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import project from "../assets/project-1.jpeg"
-import project3 from "../assets/project-3.png"
-import project6 from "../assets/project-6.jpeg"
+//import portfolio from "../assets/Portfolio.png"
+import eCommerce from "../assets/eCommerce.jpg"
+import Prode from "../assets/prodeTonic3.jpg"
+import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
+import portfolioPrueba from "../assets/portfolioPrueba.png"
 
 const container = {
   hidden: {},
@@ -12,26 +14,67 @@ const container = {
   },
 };
 
+let Project1 = {
+  title: "Portfolio",
+  image: portfolioPrueba,
+  description: "Este es mi portfolio, hecho con react y deployado en versel",
+  gitHub:"https://github.com/PedroAgustinBauso",
+  youTube:"https://www.youtube.com/"
+}
+
+let Project2 = {
+  title: "e-commerce",
+  image: eCommerce,
+  description: "Esto es el e-commerce",
+  gitHub:"https://github.com/PedroAgustinBauso/e-commerce",
+  youTube:"https://www.youtube.com/watch?v=8U38a3uWG5M&ab_channel=PedroBauso"
+}
+
+let Project3 = {
+  title: "Prode",
+  image: Prode,
+  description: "Esto es el prode",
+  gitHub: "https://github.com/NazarenoRios/Tonic3-Prode",
+  youTube:"https://www.youtube.com/"
+}
+
 const projectVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, name }) => {
+const Project = ({ project }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={projectVariant} className="relative" style={{height:"51.5vh",width:"100%"}}>
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{name}</p>
+        <p className="text-2xl font-playfair">{project.title}</p>
         <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
+          {project.description}
         </p>
+        <div style={{display:"flex",paddingTop:"10px"}}>
+          <a
+        className="hover:opacity-50 transition duration-500 pr-2"
+        href={project.gitHub}
+        target="_blank"
+        rel="noreferrer"
+      >
+       <AiFillGithub size={50}/> 
+      </a>
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href={project.youTube}
+        target="_blank"
+        rel="noreferrer"
+      >
+       <AiFillYoutube size={50}/> 
+      </a>
+        </div>
+        
       </div>
-      <img src={title} alt={projectTitle} />
+      <img src={project.image} alt='' style={{objectFit:"cover",height:"51.5vh",width:"100%",border:"2px solid #03CEA4"}}/>
     </motion.div>
   );
 };
@@ -51,7 +94,7 @@ const Projects = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div style={{paddingBottom:'10px'}}>
+        <div style={{paddingBottom:'50px'}}>
           <p className="font-playfair font-semibold text-4xl">
             <span className="text-[#03CEA4]">PRO</span>JECTS
           </p>
@@ -70,9 +113,9 @@ const Projects = () => {
         >
 
           {/* ROW 2 */}
-          <Project title={project} name={"Portfolio"} />
-          <Project title={project3} name={"Prode Tonic3"} />
-          <Project title={project6} name={"e-commerce"} />
+          <Project project={Project1}  />
+          <Project project={Project2} />
+          <Project project={Project3} />
           
         </motion.div>
       </div>
