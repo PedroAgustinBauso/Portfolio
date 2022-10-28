@@ -1,14 +1,13 @@
 import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import skills from '../assets/skills-image.png'
+import Skills from "../components/Cards";
+
 
 const MySkills = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-20">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -24,34 +23,14 @@ const MySkills = () => {
             MY <span className="text-[#03CEA4]">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
         </motion.div>
-
-        <div className="mt-16 md:mt-0">
-          {isAboveLarge ? (
-            <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
-            >
-              <img
-                alt="skills"
-                className="z-10"
-                src={skills}
-              />
-            </div>
-          ) : (
-            <img alt="skills" className="z-10" src={skills} />
-          )}
-        </div>
       </div>
-
+        
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div >
+        <Skills />
         {/* EXPERIENCE */}
-        <motion.div
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -76,10 +55,10 @@ const MySkills = () => {
             morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
             odio sit sagittis,
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* INNOVATIVE */}
-        <motion.div
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -105,9 +84,9 @@ const MySkills = () => {
             nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
             faucibus a
           </p>
-        </motion.div>
+        </motion.div> */}
         {/* IMAGINATIVE */}
-        <motion.div
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -133,7 +112,7 @@ const MySkills = () => {
             Sagittis, amet netus fringilla netus lobortis odio sed platea.
             Bibendum.
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
