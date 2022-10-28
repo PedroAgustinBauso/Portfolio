@@ -12,6 +12,7 @@ import react1 from "../assets/react.png"
 import sequelize1 from "../assets/sequelize.png" 
 import github1 from "../assets/github1.png"
 import material from "../assets/material.svg"
+import redux from "../assets/Redux.png"
 
 const Skills = () => {
   return (
@@ -56,10 +57,43 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img src={git} width='400px' height='400px' alt="/"/>
+                <img src={react1} width='400px' height='400px' alt="/"/>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>GIT</h3>
+                <h3>REACT</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={redux} width='400px' height='400px' alt="/"/>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Redux</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={tail} width='400px' height='400px' alt="/"/>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>TAILWIND CSS</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300" style={{boxShadow: "5px 10px #fff"}}>
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={material} width='400px' height='400px' alt="/"/>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>MATERIAL UI</h3>
               </div>
             </div>
           </div>
@@ -78,10 +112,10 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img src={tail} width='400px' height='400px' alt="/"/>
+                <img src={node} width='700px' height='700px' alt="/"/>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>TAILWIND CSS</h3>
+                <h3>NODE</h3>
               </div>
             </div>
           </div>
@@ -100,32 +134,10 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img src={node} width='700px' height='700px' alt="/"/>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>NODE</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
                 <img src={postgres} width='400px' height='400px' alt="/"/>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>POSTGRESQL</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <img src={react1} width='400px' height='400px' alt="/"/>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>REACT</h3>
               </div>
             </div>
           </div>
@@ -144,21 +156,21 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img src={github1} width='400px' height='400px' alt="/" style={{filter:"invert(100%)"}}/>
+                <img src={git} width='400px' height='400px' alt="/"/>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>GITHUB</h3>
+                <h3>GIT</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300" style={{boxShadow: "5px 10px #fff"}}>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"style={{boxShadow: "5px 10px #fff"}}>
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img src={material} width='400px' height='400px' alt="/"/>
+                <img src={github1} width='400px' height='400px' alt="/" style={{filter:"invert(100%)"}}/>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>MATERIAL UI</h3>
+                <h3>GITHUB</h3>
               </div>
             </div>
           </div>

@@ -57,13 +57,12 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           
-          <p className="mt-9 mb-7 text-3465258.xl text-center md:text-start" style={{zIndex:10000000}}>
+          <p className="mt-9 mb-7 text-2xl text-center md:text-start" style={{zIndex:10000000}}>
             Full Stack Developer
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          <p className="mt-10 mb-7 text-xl text-center md:text-start">
+          I am a person who always does a lot of introspection. I tend to ask my friends and acquaintances different points of view about how I see life situations, or my own attitudes. I feel that doing this gave me the ability to listen and always be open to change, as I believe that all people are constantly growing.
           </p>
         </motion.div>
 
