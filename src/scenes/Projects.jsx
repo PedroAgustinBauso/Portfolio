@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 //import portfolio from "../assets/Portfolio.png"
 import eCommerce from "../assets/eCommerce.jpg"
 import Prode from "../assets/prodeTonic3.jpg"
-import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import portfolioPrueba from "../assets/portfolioPrueba.png"
+import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 
 const container = {
   hidden: {},
