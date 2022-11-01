@@ -90,8 +90,7 @@
             "about": "",
             "tech": ["React", "Redux", "Tailwind", "Material UI","NodeJs", "Express", "PostgreSQL", "Sequelize"],
             "links": {
-                "GitHub": "https://github.com/NazarenoRios/Tonic3-Prode",
-                "Live": "https://www.producthunt.com/posts/faucetli"
+                "GitHub": "https://github.com/NazarenoRios/Tonic3-Prode"
             },
             "role": "Front-end"
         }

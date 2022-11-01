@@ -2,7 +2,7 @@ import Title from './Common/Title';
 import data from '@/data/data.json';
 import Image from 'next/image';
 import React from 'react';
-import me from "../assets/me.png"
+import prueba from "../assets/prueba.png"
 
 const About = () => {
     return (
@@ -20,7 +20,7 @@ const About = () => {
                         className="rounded-full"
                         layout="fill"
                         objectFit="cover"
-                        src={me}
+                        src={prueba}
                     />
                 </div>
             </div>
