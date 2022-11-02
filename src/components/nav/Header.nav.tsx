@@ -40,7 +40,7 @@ const Header = () => {
                 title="Avneesh"
                 to="intro"
             >
-                <Logo className="cursor-pointer" />
+                
             </Link>
 
             <ol className="hidden space-x-8 md:flex">
