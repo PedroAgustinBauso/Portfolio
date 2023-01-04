@@ -40,7 +40,7 @@ const Intro = () => {
                 </Link>
 
                     
-                    <a className="py-2 px-5 !mt-10 text-darkerBlue bg-neon border-neon hover:bg-transparent duration-100 hover:text-neon border-2 rounded-lg" href="https://drive.google.com/file/d/1v_1l4h0q8jucww_j2M8vLZnmSASfgMxk/view?usp=share_link" target="_blank" rel="noreferrer">
+                    <a className="py-2 px-5 !mt-10 text-darkerBlue bg-neon border-neon hover:bg-transparent duration-100 hover:text-neon border-2 rounded-lg" href="https://drive.google.com/file/d/1ON8bjty0Yk3LR5cD4f2kIMHfJLDZavvK/view?usp=sharing" target="_blank" rel="noreferrer">
                         Ver Cv
                     </a>
                      
