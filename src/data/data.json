@@ -64,10 +64,21 @@
     ],
     "projects": [
         {
+            "name": "Gift You A Box",
+            "image": "/projects/ABox.png",
+            "about": "",
+            "tech": ["React", "Tailwind", "JavaScript", "Html", "Css"],
+            "links": {
+                "GitHub": "https://github.com/PedroAgustinBauso/A-Box-Moment",
+                "Live": "https://gift-you-a-box.vercel.app/" 
+            },
+            "role": "Front-end"
+        },
+        {
             "name": "Portfolio",
             "image": "/projects/portfolioPrueba.png",
             "about": "",
-            "tech": ["Next.js", "Tailwind", "Typescript"],
+            "tech": ["Next.js", "Tailwind", "Typescript","Css"],
             "links": {
                 "GitHub": "https://github.com/PedroAgustinBauso/Portfolio"    
             },
